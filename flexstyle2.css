@@ -8,6 +8,34 @@ body,html {
   font-family: 'Shadows Into Light', cursive;
 }
 
+@media screen and (max-width: 319px) {
+  .photos {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    margin-top: .25em;
+    margin-right: .25em;
+    margin-left: .25em;
+    /* margin: .1em; */
+    /* text-align: center;
+    display: block; */
+  }
+
+  .photo img {
+    /* width: 18em; */
+    /* text-align: center; */
+    /* border: 3px solid black; */
+    /* border-radius: .8em; */
+    width: 100%; /* new */
+    height: auto; /* new */
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 800px) {
   #nav-bar {
     display: flex;
@@ -19,7 +47,7 @@ body,html {
   #navbar-logo {
     /* padding: 2em 2em 0 0; */
     /* margin: 1em 1em 0 1em; */
-    border: 2px gold solid;
+
     text-align: center;
     font-size: 1.5em;
     display: flex;
@@ -117,8 +145,6 @@ body,html {
   .photo {
   height: 400px;
   }
-
-
 }
 
 .flex-container {
@@ -135,7 +161,6 @@ body,html {
   height: 8em;
   position: fixed;
   z-index: 999;
-  border: 2px lightblue solid;
 }
 
 .header-img {
@@ -144,7 +169,6 @@ body,html {
   text-align: center;
   max-height: 6.5em;
   float: left;
-  border: 2px red solid;
 }
 
 #navbar-logo {
@@ -152,7 +176,7 @@ body,html {
 }
 
 #navbar-logo img {
-    padding: 0.5em;
+    /* padding: 0.5em; */
     max-width: 5em;
   }
 
@@ -161,7 +185,7 @@ body,html {
   color: white;
   font-family: 'Shadows Into Light';
   margin: .5em 0;
-  border: 2px purple solid;
+  display: inline-block;
 }
 
 .navbar-links {
@@ -169,7 +193,6 @@ body,html {
   list-style-type: none;
   background-color: #444;
   margin: 0;
-  border: 2px green solid;
 }
 
 .navbar-links li {
@@ -193,7 +216,6 @@ body,html {
   padding: .8em 1em;
   display: block;
   line-height: 1;
-  border: 2px pink solid;
 }
 
 .navbar-links li a:hover {
@@ -299,7 +321,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 30px;
+  padding: 2em;
 }
 
 .photo-heading {
@@ -315,15 +337,15 @@ hr {
   background-color: gainsboro;
   padding: 2em 2em .5em 2em;
   margin: 1em;
-  height: 25em;
+  height: 24em;
   border: 1px solid black;
   text-align: center;
 }
 
 .photo img {
   width: 18em;
-  min-width: 15em;
-  text-align: center;
+  /* min-width: 15em; */
+  /* text-align: center; */
   border: 3px solid black;
   border-radius: .8em;
 }
