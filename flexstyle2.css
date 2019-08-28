@@ -118,27 +118,23 @@ body,html {
     border-color: tomato;
   }
 
-  /* :target {
+  /* #about, #photos, #video-section, #contact {
     position: relative;
-    border-top: 20px solid transparent;
-    margin: -20px 0 0;
+    border-top: 300px solid transparent;
+    margin: -300px 0 0;
+    -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
     background-clip: padding-box;
-  }
+  } */
 
-  :target::before {
+  /* #about:before, #photos:before, #video-section:before, #contact:before {
     content: "";
     position: absolute;
     top: -2px;
     left: 0;
     right: 0;
+    border-top: 2px solid #ccc;
   } */
-
-  /* a.nav-link:before {
-    display: block;
-    content: "";
-    height: 128px;
-    margin: -200px 0 0;
-} */
 
   .main-flex-container {
     flex-direction: row;
@@ -146,6 +142,14 @@ body,html {
 
   .main-photo {
     /* top: -30px; */
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .overlay-darken-text h3 {
+    font-size: 1.5em;
   }
 
   .photo {
@@ -242,20 +246,23 @@ body,html {
   color: black;
 }
 
-/* :target {
+#about, #photos, #video-section, #contact {
   position: relative;
-  border-top: 250px solid transparent;
-  margin: -250px 0 0;
+  border-top: 128px solid transparent;
+  margin: -128px 0 0;
+  -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
   background-clip: padding-box;
 }
 
-:target::before {
+#about:before, #photos:before, #video-section:before, #contact:before {
   content: "";
   position: absolute;
   top: -2px;
   left: 0;
   right: 0;
-} */
+  /* border-top: 2px solid #ccc; */
+}
 
 .main-photo {
   /* margin: 0;
